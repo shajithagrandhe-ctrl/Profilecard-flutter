@@ -121,7 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }*/
 
-void main() {
+/*void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
@@ -140,4 +140,94 @@ void main() {
       ),
     ),
   );
+}*/
+/*void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(home: Scaffold(body: Text("hello")));
+  }
+}*/
+/*void main() {
+  runApp(ProfileCard());
+}
+
+class ProfileCard extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(Icons.woman),
+              //Text("shajitha"),
+              //Text("cse student"),
+              WelcomeMessage(),
+              StudentInfo(),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class WelcomeMessage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Text("welcome to flutter");
+  }
+}
+
+class StudentInfo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(children: [Text("shaji"), Text("cse student ")]);
+  }
+}*/
+void main() {
+  runApp(ProfileCard());
+}
+
+class ProfileCard extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(Icons.woman),
+              WelcomeMessage(),
+              StudentInfo(),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text("hey day 1and 2 done"),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class WelcomeMessage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Text("welcome students");
+  }
+}
+
+class StudentInfo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(children: [Text("shaji"), Text("cse student")]);
+  }
 }
