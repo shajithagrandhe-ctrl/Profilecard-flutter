@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-
+//day 1 and day 2
 /*void main() {
   runApp(const MyApp());
 }
@@ -141,6 +140,7 @@ class _MyHomePageState extends State<MyHomePage> {
     ),
   );
 }*/
+//myapp
 /*void main() {
   runApp(MyApp());
 }
@@ -151,6 +151,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(home: Scaffold(body: Text("hello")));
   }
 }*/
+//profile card
 /*void main() {
   runApp(ProfileCard());
 }
@@ -190,7 +191,7 @@ class StudentInfo extends StatelessWidget {
     return Column(children: [Text("shaji"), Text("cse student ")]);
   }
 }*/
-void main() {
+/*void main() {
   runApp(ProfileCard());
 }
 
@@ -229,5 +230,297 @@ class StudentInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(children: [Text("shaji"), Text("cse student")]);
+  }
+}*/
+//layout
+/*void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Column(
+            children: [
+              Container(
+                width: 200,
+                height: 100,
+                color: Colors.blue,
+                child: Padding(
+                  padding: EdgeInsets.only(
+                    top: 20,
+                    bottom: 30,
+                    left: 30,
+                    right: 25,
+                  ),
+                  child: Text("hello"),
+                ),
+              ),
+              SizedBox(height: 20),
+              Text("shajii"),
+              SizedBox(height: 20),
+              ElevatedButton(onPressed: () {}, child: Text("click me")),
+            ],
+          ),
+        ),
+      ),
+    ),
+  );
+}
+*/
+//layout day 3
+/*void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Column(
+            children: [
+              Container(
+                width: 250,
+                height: 120,
+                color: Colors.blue,
+                child: Text("hello shaji"),
+                padding: EdgeInsets.only(left: 30, top: 20),
+              ),
+              SizedBox(height: 30),
+              Text("welcome to flutter"),
+              SizedBox(height: 30),
+              ElevatedButton(onPressed: () {}, child: Text("start learning")),
+            ],
+          ),
+        ),
+      ),
+    ),
+  );
+}*/
+//layout practice day 3
+/*import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Container(
+            padding: EdgeInsets.all(50),
+            child: Column(
+              children: [
+                Icon(Icons.woman),
+                SizedBox(height: 20),
+                Text("shaji"),
+                SizedBox(height: 20),
+                Text("flutter learner"),
+                ElevatedButton(onPressed: () {}, child: Text("follow me")),
+              ],
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
+}*/
+/*import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: SizedBox(
+            width: 300,
+           child: Padding(padding: EdgeInsets.all(50),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("shaji"),
+                Text("flutter learner"),
+                ElevatedButton(onPressed: () {}, child: Text("follow me")),
+              ],
+            ),
+          ),
+        ),
+      ),
+    ),
+    ),);
+}*/
+
+/*import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Column(
+            children: [
+              Padding(
+                padding: EdgeInsets.all(50),
+                child: Row(
+                  children: [
+                    Icon(Icons.woman),
+                    SizedBox(width: 20),
+                    Column(children: [Text("shaji"), Text("flutter learner")]),
+                  ],
+                ),
+              ),
+              SizedBox(height: 20),
+              ElevatedButton(onPressed: () {}, child: Text("[follow me]")),
+            ],
+          ),
+        ),
+      ),
+    ),
+  );
+}*/
+/*import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(),
+        body: Center(
+          child: Column(
+            children: [
+              Text("hello"),
+              Spacer(),
+              Text("profile"),
+              Flexible(
+                flex: 1,
+                child: Container(child: Text("shaji"), color: Colors.blue),
+              ),
+              Spacer(),
+              Flexible(
+                flex: 1,
+                child: Container(
+                  child: Text("learn flutter"),
+                  color: Colors.red,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    ),
+  );
+}*/
+/*import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: Text("My Flutter App")),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Row(children: [Icon(Icons.woman), SizedBox(width: 10)]),
+              Column(children: [Text("shaji"),
+                Text("Flutter learner"),],),],),
+              SizedBox(height: 100),
+              ElevatedButton(onPressed: () {},
+                  child: Text("[Follow me]")),
+
+        ],
+          Spacer(),
+          Row(children: [Text("home"), SizedBox(width: 100), Text("profile")]),
+        ),
+      ),
+  ),
+  );
+}*/
+/*import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        body: Container(
+          child: Column(
+            children: [
+              Padding(
+                padding: EdgeInsets.all(50),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.woman),
+                    Column(
+                      children: [
+                        Text("shaji"),
+                        Text("flutter developer"),
+                        SizedBox(height: 50),
+                        Row(
+                          children: [
+                            SizedBox(width: 50),
+                            Icon(Icons.location_city),
+
+                            Text("andhra pradesh"),
+                          ],
+                        ),
+                      ],
+                    ),
+                    Spacer(),
+                    Icon(Icons.arrow_circle_right),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    ),
+  );
+}*/
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MaterialApp(home: CounterPage()));
+}
+
+class CounterPage extends StatefulWidget {
+  @override
+  State<CounterPage> createState() {
+    return CounterPageState();
+  }
+}
+
+class CounterPageState extends State<CounterPage> {
+  int counter = 0;
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("counter")),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text("counter value: $counter"),
+            SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    setState(() {
+                      counter++;
+                    });
+                  },
+                  child: Text("increase"),
+                ),
+                SizedBox(width: 10),
+                ElevatedButton(
+                  onPressed: () {
+                    setState(() {
+                      counter--;
+                    });
+                  },
+                  child: Text("decrease"),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
